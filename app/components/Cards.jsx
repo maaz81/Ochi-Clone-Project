@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion';
 
 const Cards = () => {
     return (
@@ -20,7 +21,18 @@ const Cards = () => {
                         <img src="https://ochi.design/wp-content/uploads/2022/04/logo002.svg" alt="" />
 
                     </div>
-                    <h1 className='uppercase border-2 text-xs w-fit py-1 px-2 rounded-full ml-5 mb-10 border-zinc-100 font-extralight'>Rating 5.0 on Clutch</h1>
+                    <motion.h1
+                        className='uppercase border-2 border-l text-xs w-fit py-1 px-2 rounded-full ml-5 mb-10 border-zinc-100 font-extralight cursor-pointer'
+                        whileHover={{
+                            backgroundColor: '#ffffff', // Change background to white
+                            transition: { duration: 1.5,ease:'ease-in-out' },
+                            color:'black',
+                            
+                             // Animation duration
+                        }}
+                    >
+                        Rating 5.0 on Clutch
+                    </motion.h1>
 
                 </div>
 
@@ -28,9 +40,20 @@ const Cards = () => {
                     <div className='flex justify-center items-center h-[80%]'>
                         <img src="https://ochi.design/wp-content/uploads/2022/04/logo003.png" className='w-20 h-20' alt="" />
                     </div>
-                    <h1 className='uppercase border-2 text-xs w-fit py-1 px-2 rounded-full ml-5 mb-10 border-zinc-100 font-extralight'>Bussiness BootCamp ALMUNI   </h1>
+                    <motion.h1
+                        className='uppercase border-2 border-l text-xs w-fit py-1 px-2 rounded-full ml-5 mb-10 border-zinc-100 font-extralight cursor-pointer'
+                        whileHover={{
+                            backgroundColor: '#ffffff', // Change background to white
+                            transition: { duration: 1.5 },
+                            color:'black',
+                            
+                            
+                             // Animation duration
+                        }}
+                    >
+                        Bussiness BootCamp ALMUNI  
+                    </motion.h1>
                 </div>
-
             </div>
 
         </div>
