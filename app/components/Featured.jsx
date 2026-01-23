@@ -19,7 +19,7 @@ const Featured = () => {
     return (
         <div className='w-full py-20'>
             <div className='w-full px-20 border-b-[1px] border-zinc-700 pb-20'>
-                <h1 className='text-5xl'>Fetrued projects</h1>
+                <h1 className='text-5xl'>Featured projects</h1>
             </div>
             <div className='px-20 w-full '>
                 <div className='cards w-full flex gap-10 mt-10'>

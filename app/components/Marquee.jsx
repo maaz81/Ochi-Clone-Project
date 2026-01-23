@@ -45,29 +45,3 @@ const Marquee = () => {
 }
 
 export default Marquee
-
-
-
-
-
-// import React from 'react';
-// import '../Style/Marquee.css';
-
-// const Marquee = () => {
-//   return (
-//     <div className='marquee'>
-//       <div className='marquee__content'>
-//         <span>we are ochi</span>
-//         <span>we are ochi</span>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Marquee;
-
-
-
-
-
-
