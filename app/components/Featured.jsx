@@ -1,5 +1,5 @@
 'use client'
-import { motion, useAnimate, useAnimation } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import React, { useState } from 'react'
 import { FaArrowUpLong } from 'react-icons/fa6';
 
@@ -20,7 +20,9 @@ const Featured = () => {
     return (
         <div className='w-full py-20'>
             <div className='w-full px-20 border-b-[1px] border-zinc-700 pb-20'>
-                <h1 className='text-5xl'>Featured projects</h1>
+                <h1 className="font-heading text-5xl">
+                    Featured Projects
+                </h1>
             </div>
             <div className='px-20 w-full '>
                 <div className='cards w-full flex gap-10 mt-10'>
@@ -37,7 +39,7 @@ const Featured = () => {
                                     className='inline-block' key={index}>{item}</motion.span>
                             })}</h1>
                             <div className='card w-full overflow-hidden h-full rounded-xl bg-green-600 '>
-                                <img className='w-full h-full ' src="https://ochi.design/wp-content/uploads/2023/10/Fyde_Illustration_Crypto_2-663x551.png" alt="" />
+                                <img className='w-full h-full ' src="Images/Fyde_Illustration_Crypto.png" alt="" />
                             </div>
                         </motion.div>
                     </div>
@@ -55,7 +57,7 @@ const Featured = () => {
                                         className='inline-block' key={index}>{item}</motion.span>
                                 })}</h1>
 
-                                <img className='w-full h-full' src="https://ochi.design/wp-content/uploads/2022/09/Vise_front2-663x551.jpg" alt="" />
+                                <img className='w-full h-full' src="Images/Vise.jpg" alt="" />
                             </div>
                         </motion.div>
                     </div>
