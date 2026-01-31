@@ -1,7 +1,8 @@
 'use client'
-import { motion, animate } from 'framer-motion'; // Import motion and animate from framer-motion
-import { React, useState } from 'react';
+import { motion } from 'framer-motion'; // Import motion and animate from framer-motion
+import React, { useState } from 'react';
 import { FaArrowUpLong } from 'react-icons/fa6';
+import Image from 'next/image';
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -11,14 +12,16 @@ const About = () => {
       animate={{}} // Add animation properties here if needed
       className='w-full py-20 pl-10 pr-10 bg-[#CDEA68] rounded-tl-3xl rounded-tr-3xl text-black'
     >
-      <h1 className='text-[3.6vw] mr-8 leading-[4.5vw] tracking-tight'>
-        Ochi is a strategic presentation agency for forward-thinking businesses that need to{' '}
+      <h1 className='font-body text-[3.6vw] mr-8 leading-[4.5vw] tracking-tight'>
+        A strategic presentation agency for forward-thinking businesses that need to{' '}
         <u>raise funds, sell products, explain complex ideas,</u> and <u>hire great people.</u>
       </h1>
 
       <div className='w-full flex gap-5 border-t-[1px] pt-10 mt-20 border-[#a1b562]'>
         <div className="w-1/2">
-          <h1 className='text-4xl'>Our Approach</h1>
+          <h1 className="font-heading text-4xl">
+            Our Approach
+          </h1>
           <button
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
@@ -42,7 +45,13 @@ const About = () => {
           animate={{ scale: isHovered ? 0.9 : 1 }} // Example animation on hover
           transition={{ duration: 0.8 }} // Smooth transition
         >
-          <img src="/Images/about1.jpeg" alt="hil" className='rounded-xl w-full h-auto' />
+          <Image
+            src="/Images/about1.jpeg"
+            alt="Team collaboration"
+            width={800}
+            height={600}
+            className="rounded-xl w-full h-auto"
+          />
         </motion.div>
       </div>
     </motion.div>
