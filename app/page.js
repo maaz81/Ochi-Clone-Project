@@ -9,7 +9,6 @@ import Featured from './components/Featured';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 import LocomotiveScroll from 'locomotive-scroll';
-import Image from 'next/image';
 function Page() {
   const scrollRef = useRef(null);
 
@@ -26,14 +25,14 @@ function Page() {
 
   return (
     <div ref={scrollRef} className='w-full min-h-screen text-white'>
-      <Navbar/>
-      <LandingPage/>
-      <Marquee/>
-      <About/>
-      <Eyes/>
-      <Featured/>
-      <Cards/>
-      <Footer/>
+      <Navbar />
+      <LandingPage />
+      <Marquee />
+      <About />
+      <Eyes />
+      <Featured />
+      <Cards />
+      <Footer />
     </div>
   );
 }

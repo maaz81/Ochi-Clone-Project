@@ -1,3 +1,4 @@
+'use client'
 import { motion, animate } from 'framer-motion'; // Import motion and animate from framer-motion
 import { React, useState } from 'react';
 import { FaArrowUpLong } from 'react-icons/fa6';
@@ -25,12 +26,11 @@ const About = () => {
           >
             Read More
             <div
-              className={`flex justify-center items-center rounded-full bg-zinc-100 overflow-hidden  transition-all duration-300 ${
-                isHovered ? 'h-6 w-6 text-black' : 'w-2 h-2'
-              }`}
+              className={`flex justify-center items-center rounded-full bg-zinc-100 overflow-hidden  transition-all duration-300 ${isHovered ? 'h-6 w-6 text-black' : 'w-2 h-2'
+                }`}
             >
               <span className='rotate-[45deg]'>
-                <FaArrowUpLong/>
+                <FaArrowUpLong />
               </span>
             </div>
           </button>

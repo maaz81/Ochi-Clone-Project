@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { motion } from 'framer-motion';
 
@@ -25,10 +26,10 @@ const Cards = () => {
                         className='uppercase border-2 border-l text-xs w-fit py-1 px-2 rounded-full ml-5 mb-10 border-zinc-100 font-extralight cursor-pointer'
                         whileHover={{
                             backgroundColor: '#ffffff', // Change background to white
-                            transition: { duration: 1.5,ease:'ease-in-out' },
-                            color:'black',
-                            
-                             // Animation duration
+                            transition: { duration: 1.5, ease: 'ease-in-out' },
+                            color: 'black',
+
+                            // Animation duration
                         }}
                     >
                         Rating 5.0 on Clutch
@@ -45,13 +46,13 @@ const Cards = () => {
                         whileHover={{
                             backgroundColor: '#ffffff', // Change background to white
                             transition: { duration: 1.5 },
-                            color:'black',
-                            
-                            
-                             // Animation duration
+                            color: 'black',
+
+
+                            // Animation duration
                         }}
                     >
-                        Bussiness BootCamp ALMUNI  
+                        Bussiness BootCamp ALMUNI
                     </motion.h1>
                 </div>
             </div>
