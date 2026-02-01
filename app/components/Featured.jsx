@@ -2,6 +2,7 @@
 import { motion, useAnimation } from 'framer-motion'
 import React, { useState } from 'react'
 import { FaArrowUpLong } from 'react-icons/fa6';
+import Image from 'next/image';
 
 const Featured = () => {
 
@@ -39,7 +40,12 @@ const Featured = () => {
                                     className='inline-block' key={index}>{item}</motion.span>
                             })}</h1>
                             <div className='card w-full overflow-hidden h-full rounded-xl bg-green-600 '>
-                                <img className='w-full h-full ' src="Images/Fyde_Illustration_Crypto.png" alt="" />
+                                <Image
+                                    fill
+                                    className='object-cover'
+                                    src="/Images/Fyde_Illustration_Crypto.png"
+                                    alt="Fyde Illustration"
+                                />
                             </div>
                         </motion.div>
                     </div>
@@ -57,7 +63,12 @@ const Featured = () => {
                                         className='inline-block' key={index}>{item}</motion.span>
                                 })}</h1>
 
-                                <img className='w-full h-full' src="Images/Vise.jpg" alt="" />
+                                <Image
+                                    fill
+                                    className='object-cover'
+                                    src="/Images/Vise.jpg"
+                                    alt="Vise Project"
+                                />
                             </div>
                         </motion.div>
                     </div>
