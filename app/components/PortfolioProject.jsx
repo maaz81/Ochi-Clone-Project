@@ -67,6 +67,10 @@ const PortfolioProject = () => {
                     </span>
                 </div>
             </a>
+
+            <p className="mt-10 text-[14px] font-body opacity-70 normal-case text-center">
+                Practice project · Non-commercial · Design credit: ochi.design
+            </p>
         </section>
     );
 };
