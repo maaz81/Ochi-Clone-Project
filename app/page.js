@@ -9,6 +9,7 @@ import Featured from './components/Featured';
 import Cards from './components/Cards';
 import Footer from './components/Footer';
 import LocomotiveScroll from 'locomotive-scroll';
+import PortfolioProject from './components/PortfolioProject';
 function Page() {
   const scrollRef = useRef(null);
 
@@ -32,6 +33,7 @@ function Page() {
       <Eyes />
       <Featured />
       <Cards />
+      <PortfolioProject />
       <Footer />
     </div>
   );
